@@ -88,27 +88,87 @@ nav li a {
     /* height: 600px; */
     flex-shrink: 0;
     margin: 50px auto;
-    width:100%;
+    width: 100%;
 }
-.banner{
+
+.banner {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* main styles */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.team-des {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    /* 162.5% */
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-tile {
+    font-size: 3rem;
+    font-weight: 500;
+
+}
+
+.team-title .QL {
+    color: var(--Dark-03, #727272);
+    font-weight: 500;
+}
+
+.team-title .OF {
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+}
+
+.team-title .F {
+    color: #FF900E;
+    font-weight: 700;
+}
+
 /* for mobile */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
 
     }
-    nav{
+
+    nav,
+    .team-container{
         flex-direction: column;
     }
-    
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
 }
+
 /* for tab */
-@media screen and (min-width:576px) and (max-width:992px){
-    nav{
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav, .team-container {
         flex-direction: column;
     }
 
