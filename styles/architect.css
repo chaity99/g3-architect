@@ -1,6 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
-  *{
+* {
     font-family: 'Work Sans', sans-serif;
-  }
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 30px;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+
+}
+
+.nav-title {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner-title {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-des {
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.btn {
+    width: 180px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    /* margin: 32px 620px; */
+    align-items: center;
+    color: #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+.img-1 {
+    /* width: 1440px; */
+    /* height: 600px; */
+    flex-shrink: 0;
+    margin: 50px auto;
+    width:100%;
+}
+.banner{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* for mobile */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* for tab */
+@media screen and (min-width:576px) and (max-width:992px){
+    nav{
+        flex-direction: column;
+    }
+
+}
