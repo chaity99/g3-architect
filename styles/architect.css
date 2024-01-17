@@ -137,16 +137,33 @@ main {
 .team-title .QL {
     color: var(--Dark-03, #727272);
     font-weight: 500;
+    font-size: 45px;
 }
 
 .team-title .OF {
     color: var(--Dark-01, #131313);
     font-weight: 700;
+    font-size: 45px;
+
 }
 
 .team-title .F {
     color: #FF900E;
     font-weight: 700;
+    font-size: 45px;
+
+}
+
+.fact-title {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.fact-des {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* for mobile */
@@ -157,9 +174,10 @@ main {
     }
 
     nav,
-    .team-container{
+    .team-container {
         flex-direction: column;
     }
+
     .team-img-container {
         grid-template-columns: 1fr;
     }
@@ -168,7 +186,9 @@ main {
 
 /* for tab */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav, .team-container {
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
 
